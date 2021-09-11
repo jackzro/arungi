@@ -16,6 +16,28 @@ export default function Home() {
           Arungi Rasa - Menjaga dan Melestarikan Kekayaan Kuliner Indonesia
         </title>
         <link rel="icon" href="/arungi-rasa-square-no-text-1.png" />
+        
+        <link
+          rel='preload'
+          href='/fonts/Gotham/Gotham-Book.ttf'
+          as='font'
+          crossOrigin=""
+        />
+
+        <link
+          rel='preload'
+          href='/fonts/Gotham/Gotham-Bold.ttf'
+          as='font'
+          crossOrigin=""
+        />
+
+        <link
+          rel='preload'
+          href='/fonts/Monetasans/Monetasans-bold.otf'
+          as='font'
+          crossOrigin=""
+        />
+
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width, minimum-scale=1.0"
@@ -24,16 +46,20 @@ export default function Home() {
           name="description"
           content="Arungi Rasa adalah platform digital yang menghubungkan pelaku usaha makanan dan minuman ke konsumen. Kami hadir untuk mengekspos kuliner lokal/daerah ke jangkauan konsumen yang lebih luas."
         />
+
       </Head>
 
-      <Navbar />
+      <Navbar/>
+      <main>
+        <MainArungi/>
+        <Promo/>
+        <KulinerKhas/>
+        <InspirasiArungi/>
+        <SekilasTentangPT/>
+        <YukLihatProdukKami/>
+      </main>
 
-      <MainArungi />
-      <Promo />
-      <KulinerKhas />
-      <InspirasiArungi />
-      <SekilasTentangPT />
-      <YukLihatProdukKami />
+      
       <Footer />
     </div>
   );

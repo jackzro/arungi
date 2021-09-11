@@ -4,8 +4,8 @@ function InspirasiArungi() {
       <iframe
         className="h-[500px] min-w-full lg:min-w-[500px] lg:h-[300px]"
         src="https://www.youtube.com/embed/-gkfXZeq_K0?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"
-        frameborder="0"
-        allowFullscreen
+        frameBorder="0"
+        allowFullScreen
       ></iframe>
 
       <div className="text-left self-start lg:w-[500px] lg:h-[300px] lg:self-center">

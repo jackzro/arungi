@@ -1,12 +1,23 @@
+import Image from "next/image"
+
 function MainArungi() {
   return (
-    <section className="min-h-screen min-w-full bg-main-pattern bg-cover bg-fixed bg-center bg-no-repeat bg -mt-20  flex flex-col justify-center items-center text-center">
-      <h1 className="font-thavi text-5xl text-green-900">Arungi Rasa </h1>
-      <p className="font-thavi text-2xl text-green-800">
-        Kami Menjaga dan Melestarikan <br className="hidden lg:inline" />{" "}
-        Kekayaan Kuliner Indonesia.
-      </p>
-    </section>
+
+    <div className ='relative h-[750px] xs:h-[300px] sm:h-[500px] lg:h-[700px]'>
+      <Image
+        src = "/banners/bg-12.jpeg"
+        layout='fill'
+        objectFit='cover'
+      />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-md grid justify-items-stretch">
+        <h1 className="text-2xl lg:text-5xl sm:px-0 md:px-10 lg:px-0 text-green-900 font-Monetasans text-center">Jelajahi Kekayaan Kuliner Indonesia bersama Arungi Rasa</h1>
+        <button className='text-white bg-yellow-500
+                px-8 py-2 shadow-md rounded-3xl font-bold justify-self-center my-10 hover:shadow-xl
+                active:scale-90 transition duration-150'
+                >Mulai Menjelajah</button>
+      </div>
+    </div>
+    
   );
 }
 

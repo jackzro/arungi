@@ -71,7 +71,7 @@ function KulinerKhas() {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-2 my-4 lg:grid-cols-3 xl:grid-cols-5">
-        {gambar.map((item) => (
+        {gambar?.map((item) => (
           <div className="relative min-w-[200px] h-[350px]" key={item.id}>
             <Image src={item.img} layout="fill" objectFit="fill" />
           </div>
